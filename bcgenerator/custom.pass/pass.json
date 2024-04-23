@@ -1,0 +1,40 @@
+{
+    "formatVersion": 1,
+    "passTypeIdentifier": "pass.com.businesscard.bcgenerator",
+    "serialNumber": "8j23fm3",
+    "webServiceURL": "https://example.com/passes/",
+    "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+    "teamIdentifier": "8HZT3TR2ZJ",
+    "barcode": {
+        "message": "www.realestatewithshayaan.com",
+        "format": "PKBarcodeFormatQR",
+        "messageEncoding": "iso-8859-1"
+    },
+    "organizationName": "NextHome",
+    "description": "NextHome",
+    "logoText": "Shayaan Siddiqui",
+    "foregroundColor": "rgb(1, 1, 1)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "generic": {
+        "primaryFields": [
+            {
+                "key": "member",
+                "value": "NextHome",
+            }
+        ],
+        "secondaryFields": [
+            {
+                "key": "subtitle",
+                "label": "Email",
+                "value": "ssiddiqui@nexthomerepros.com"
+            }
+        ],
+        "auxiliaryFields": [
+            {
+                "key": "level",
+                "label": "CELL",
+                "value": "609.25509635"
+            }
+        ]
+  }
+}
