@@ -1,52 +1,41 @@
-//
-//  ContentView.swift
-//  Passmaker
-//
-//  Created by Chris Williams on 9/2/23.
-//
-
 import SwiftUI
 import PassKit
 
 struct ContentView: View {
-    @State private var qrTest = "ssiddiqui@nexthomerepros.com"
     
-    @State private var backgroundColor = Color.white
-    @State private var textColor = Color.black
-    
-    @State private var isLoading = false
-    
-    @State private var newPass: PKPass?
-    
-    @State private var passSheetVisible = false
+    // File name of the .pkpass file in the assets
+    let passFileName = "custom"
     
     var body: some View {
         VStack {
             Form {
-                Section("Website") {
-                    TextField("QR Text", text: self.$qrTest)
-                }
-                
-                Section("Add to wallet") {
-                    if (self.isLoading) {
-                        ProgressView()
-                    } else {
-                        AddPassToWalletButton {
-                            
-                        }
+                Section("Open Pass") {
+                    Button("Open Pass") {
+                        openPass()
                     }
                 }
             }
         }
-        .navigationTitle("Pass Generator")
-        .sheet(isPresented: self.$passSheetVisible) {
-            
-        }
     }
-}
+    
+    func openPass() {
+       
+       
+        let url = Bundle.main.url(forResource: "custom", withExtension: "pkpass")!
+        var data: Data?
+        var pasesViewController: PKAddPassesViewController?
+        do {
+            data = try Data(contentsOf: url)
+            pasesViewController = PKAddPassesViewController(pass: try PKPass(data: data!))
+        } catch {
+            return
+        }
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            if let window = windowScene.windows.first {
+                window.rootViewController?.present(pasesViewController!, animated: true)
+            }
+        }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

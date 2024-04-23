@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D93B2AA2BD7FA8A00DA50E1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8D93B2A92BD7FA8A00DA50E1 /* .gitignore */; };
 		8DE05C862BD7D184005DB9D7 /* bcgeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE05C852BD7D184005DB9D7 /* bcgeneratorApp.swift */; };
 		8DE05C882BD7D184005DB9D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE05C872BD7D184005DB9D7 /* ContentView.swift */; };
 		8DE05C8A2BD7D186005DB9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE05C892BD7D186005DB9D7 /* Assets.xcassets */; };
@@ -18,9 +17,7 @@
 		8DE05CA62BD7D186005DB9D7 /* bcgeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE05CA52BD7D186005DB9D7 /* bcgeneratorUITests.swift */; };
 		8DE05CA82BD7D186005DB9D7 /* bcgeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE05CA72BD7D186005DB9D7 /* bcgeneratorUITestsLaunchTests.swift */; };
 		8DE05CB62BD7D4D8005DB9D7 /* custom.pass in Resources */ = {isa = PBXBuildFile; fileRef = 8DE05CB52BD7D4D8005DB9D7 /* custom.pass */; };
-		8DE05CBB2BD7DB1F005DB9D7 /* signerCert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 8DE05CB82BD7DB1F005DB9D7 /* signerCert.pem */; };
-		8DE05CBC2BD7DB1F005DB9D7 /* signerKey.pem in Resources */ = {isa = PBXBuildFile; fileRef = 8DE05CB92BD7DB1F005DB9D7 /* signerKey.pem */; };
-		8DE05CBD2BD7DB1F005DB9D7 /* wwdr.pem in Resources */ = {isa = PBXBuildFile; fileRef = 8DE05CBA2BD7DB1F005DB9D7 /* wwdr.pem */; };
+		8DF09C8A2BD8195200A4AA73 /* custom.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 8DF09C892BD8175200A4AA73 /* custom.pkpass */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D93B2A92BD7FA8A00DA50E1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8DE05C822BD7D184005DB9D7 /* bcgenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bcgenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE05C852BD7D184005DB9D7 /* bcgeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bcgeneratorApp.swift; sourceTree = "<group>"; };
 		8DE05C872BD7D184005DB9D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,9 +52,7 @@
 		8DE05CA72BD7D186005DB9D7 /* bcgeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bcgeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8DE05CB42BD7D194005DB9D7 /* bcgenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bcgenerator.entitlements; sourceTree = "<group>"; };
 		8DE05CB52BD7D4D8005DB9D7 /* custom.pass */ = {isa = PBXFileReference; lastKnownFileType = folder; path = custom.pass; sourceTree = "<group>"; };
-		8DE05CB82BD7DB1F005DB9D7 /* signerCert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signerCert.pem; sourceTree = "<group>"; };
-		8DE05CB92BD7DB1F005DB9D7 /* signerKey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signerKey.pem; sourceTree = "<group>"; };
-		8DE05CBA2BD7DB1F005DB9D7 /* wwdr.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wwdr.pem; sourceTree = "<group>"; };
+		8DF09C892BD8175200A4AA73 /* custom.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom.pkpass; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +83,6 @@
 		8DE05C792BD7D184005DB9D7 = {
 			isa = PBXGroup;
 			children = (
-				8DE05CB72BD7DAF8005DB9D7 /* certs */,
 				8DE05C842BD7D184005DB9D7 /* bcgenerator */,
 				8DE05C9A2BD7D186005DB9D7 /* bcgeneratorTests */,
 				8DE05CA42BD7D186005DB9D7 /* bcgeneratorUITests */,
@@ -114,6 +107,7 @@
 				8DE05C852BD7D184005DB9D7 /* bcgeneratorApp.swift */,
 				8DE05CB52BD7D4D8005DB9D7 /* custom.pass */,
 				8DE05C872BD7D184005DB9D7 /* ContentView.swift */,
+				8DF09C892BD8175200A4AA73 /* custom.pkpass */,
 				8DE05C892BD7D186005DB9D7 /* Assets.xcassets */,
 				8DE05C8E2BD7D186005DB9D7 /* Persistence.swift */,
 				8DE05C902BD7D186005DB9D7 /* bcgenerator.xcdatamodeld */,
@@ -145,17 +139,6 @@
 				8DE05CA72BD7D186005DB9D7 /* bcgeneratorUITestsLaunchTests.swift */,
 			);
 			path = bcgeneratorUITests;
-			sourceTree = "<group>";
-		};
-		8DE05CB72BD7DAF8005DB9D7 /* certs */ = {
-			isa = PBXGroup;
-			children = (
-				8DE05CB82BD7DB1F005DB9D7 /* signerCert.pem */,
-				8DE05CB92BD7DB1F005DB9D7 /* signerKey.pem */,
-				8DE05CBA2BD7DB1F005DB9D7 /* wwdr.pem */,
-				8D93B2A92BD7FA8A00DA50E1 /* .gitignore */,
-			);
-			path = certs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,13 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE05CBB2BD7DB1F005DB9D7 /* signerCert.pem in Resources */,
-				8D93B2AA2BD7FA8A00DA50E1 /* .gitignore in Resources */,
+				8DF09C8A2BD8195200A4AA73 /* custom.pkpass in Resources */,
 				8DE05C8D2BD7D186005DB9D7 /* Preview Assets.xcassets in Resources */,
-				8DE05CBD2BD7DB1F005DB9D7 /* wwdr.pem in Resources */,
 				8DE05C8A2BD7D186005DB9D7 /* Assets.xcassets in Resources */,
 				8DE05CB62BD7D4D8005DB9D7 /* custom.pass in Resources */,
-				8DE05CBC2BD7DB1F005DB9D7 /* signerKey.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

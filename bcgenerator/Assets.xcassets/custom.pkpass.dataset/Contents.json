@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "custom.pkpass",
+      "idiom" : "universal",
+      "universal-type-identifier" : "com.apple.pkpass-data"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
